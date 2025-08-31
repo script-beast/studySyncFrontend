@@ -118,14 +118,6 @@ const QuizPage = () => {
     }
   };
 
-  const handlePauseResume = () => {
-    if (timer.isRunning) {
-      timer.pause();
-    } else {
-      timer.resume();
-    }
-  };
-
   if (!id) {
     navigate('/app/documents');
     return null;
