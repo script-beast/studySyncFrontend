@@ -50,8 +50,8 @@ export function JwtSignInView() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const defaultValues: SignInSchemaType = {
-    email: 'demo@gmail.com',
-    password: 'Demo@1234',
+    email: '',
+    password: '',
   };
 
   const methods = useForm<SignInSchemaType>({
@@ -79,7 +79,12 @@ export function JwtSignInView() {
 
   const renderForm = () => (
     <Box sx={{ gap: 3, display: 'flex', flexDirection: 'column' }}>
-      <Field.Text name="email" label="Email address" slotProps={{ inputLabel: { shrink: true } }} />
+      <Field.Text
+        name="email"
+        label="Email address"
+        slotProps={{ inputLabel: { shrink: true } }}
+        placeholder="Email"
+      />
 
       <Box sx={{ gap: 1.5, display: 'flex', flexDirection: 'column' }}>
         <Field.Text

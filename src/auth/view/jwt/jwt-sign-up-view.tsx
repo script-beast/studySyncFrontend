@@ -52,10 +52,10 @@ export function JwtSignUpView() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const defaultValues: SignUpSchemaType = {
-    firstName: 'Hello',
-    lastName: 'Friend',
-    email: 'hello@gmail.com',
-    password: 'Password123',
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
   };
 
   const methods = useForm<SignUpSchemaType>({
@@ -94,15 +94,22 @@ export function JwtSignUpView() {
           name="firstName"
           label="First name"
           slotProps={{ inputLabel: { shrink: true } }}
+          placeholder="John"
         />
         <Field.Text
           name="lastName"
           label="Last name"
           slotProps={{ inputLabel: { shrink: true } }}
+          placeholder="Doe"
         />
       </Box>
 
-      <Field.Text name="email" label="Email address" slotProps={{ inputLabel: { shrink: true } }} />
+      <Field.Text
+        name="email"
+        label="Email address"
+        slotProps={{ inputLabel: { shrink: true } }}
+        placeholder="Email"
+      />
 
       <Field.Text
         name="password"
