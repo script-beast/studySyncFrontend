@@ -109,7 +109,7 @@ export function QuizNav({ collapseNav, quiz, selectedId, handleChangeQuestion, i
   return (
     <>
       <ToggleButton onClick={onOpenMobile} sx={{ display: { md: 'none' } }}>
-        <Iconify width={16} icon="solar:users-group-rounded-bold" />
+        <Iconify width={16} icon="eva:arrow-ios-forward-fill" />
       </ToggleButton>
 
       <Box

@@ -70,14 +70,20 @@ export function NavUpgrade({ sx, ...other }: BoxProps) {
           <Button
             variant="soft"
             color="info"
-            href="/"
+            href="https://aprajapati.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             fullWidth
           >
             Visit Me
           </Button>
-          <Button variant="soft" href="" target="_blank" rel="noopener noreferrer" fullWidth>
+          <Button
+            variant="soft"
+            href="https://aprajapati.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            fullWidth
+          >
             Let go again
           </Button>
         </Stack>

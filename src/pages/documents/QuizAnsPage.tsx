@@ -3,7 +3,7 @@ import type { QuizResult, QuizAttempt } from 'src/types';
 import React from 'react';
 import { useParams, useNavigate } from 'react-router';
 
-import { Chip, Stack, Typography } from '@mui/material';
+import { Button, Chip, Stack, Typography } from '@mui/material';
 
 import { fDate } from 'src/utils/format-time';
 
@@ -146,6 +146,37 @@ const QuizAnsPage = () => {
               details: null,
             }}
           />
+          <Stack
+            spacing={2}
+            direction={{ xs: 'column-reverse', md: 'row' }}
+            justifyContent="space-between"
+            sx={{ my: 1 }}
+          >
+            <Stack spacing={1}>
+              <Button variant="soft" onClick={() => navigate('/app/documents')}>
+                Back to Documents
+              </Button>
+            </Stack>
+            <Stack spacing={1} alignItems="flex-end" direction="row">
+              <Button
+                variant="outlined"
+                onClick={() => selectedIndex > 0 && handleChangeQuestion(selectedIndex - 1)}
+                disabled={selectedIndex <= 0}
+              >
+                Previous
+              </Button>
+              <Button
+                variant="contained"
+                onClick={() =>
+                  selectedIndex < quizQuestions.length - 1 &&
+                  handleChangeQuestion(selectedIndex + 1)
+                }
+                disabled={selectedIndex === quizQuestions.length - 1}
+              >
+                Next
+              </Button>
+            </Stack>
+          </Stack>
         </>
       ) : null}
     </DashboardContent>

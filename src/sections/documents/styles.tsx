@@ -34,7 +34,7 @@ export const CollapseButton = styled(
 // ----------------------------------------------------------------------
 
 export const ToggleButton = styled(ButtonBase)<ButtonBaseProps>(({ theme }) => ({
-  top: 84,
+  top: 55,
   left: 0,
   zIndex: 9,
   width: 32,

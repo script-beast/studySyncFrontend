@@ -156,7 +156,33 @@ const QuizPage = () => {
               </Button>
             </Box>
           ) : (
-            <Stack direction="row" alignItems="center" justifyContent="flex-end" spacing={2} mb={2}>
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent="space-between"
+              spacing={2}
+              mb={2}
+            >
+              <Stack spacing={1} alignItems="flex-end" direction="row">
+                <Button
+                  variant="outlined"
+                  onClick={() => selectedIndex > 0 && handleChangeQuestion(selectedIndex - 1)}
+                  disabled={selectedIndex <= 0}
+                >
+                  Previous
+                </Button>
+                <Button
+                  variant="contained"
+                  onClick={() =>
+                    selectedIndex < quizQuestions.length - 1 &&
+                    handleChangeQuestion(selectedIndex + 1)
+                  }
+                  disabled={selectedIndex === quizQuestions.length - 1}
+                >
+                  Next
+                </Button>
+              </Stack>
+
               <QuizTimer
                 elapsedSeconds={timer.elapsedSeconds}
                 isRunning={timer.isRunning}

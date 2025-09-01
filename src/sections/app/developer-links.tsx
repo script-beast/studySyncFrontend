@@ -17,10 +17,26 @@ type Props = CardProps & {
 };
 
 const list = [
-  { label: 'GitHub', link: '', icon: <Iconify width={32} icon="socials:github" /> },
-  { label: 'Linkedin', link: '', icon: <Iconify width={32} icon="socials:linkedin" /> },
-  { label: 'Leetcode', link: '', icon: <Iconify width={32} icon="solar:code-bold" /> },
-  { label: 'Google', link: '', icon: <Iconify width={32} icon="socials:google" /> },
+  {
+    label: 'GitHub',
+    link: 'https://github.com/script-beast',
+    icon: <Iconify width={32} icon="socials:github" />,
+  },
+  {
+    label: 'Linkedin',
+    link: 'https://www.linkedin.com/in/aprajapati028/',
+    icon: <Iconify width={32} icon="socials:linkedin" />,
+  },
+  {
+    label: 'Leetcode',
+    link: 'https://leetcode.com/u/Ankitkp028/',
+    icon: <Iconify width={32} icon="solar:code-bold" />,
+  },
+  {
+    label: 'Google',
+    link: 'mailto:ankitkp0128@gmail.com',
+    icon: <Iconify width={32} icon="socials:google" />,
+  },
 ];
 
 export function DeveloperLinks({ title, subheader, sx, ...other }: Props) {
@@ -46,7 +62,12 @@ export function DeveloperLinks({ title, subheader, sx, ...other }: Props) {
               alignItems: 'center',
               flexDirection: 'column',
               border: `solid 1px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.12)}`,
+              textDecoration: 'none',
             })}
+            component="a"
+            href={site.link}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {site.icon}
 
