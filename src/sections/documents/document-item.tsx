@@ -108,7 +108,7 @@ export function DocumentItem({ document, sx, loadDocuments, ...other }: Props) {
         >
           {!document.flashCardStatus ? (
             <Button variant="contained" size="small" onClick={onGenerateFlashcards} fullWidth>
-              Generate Flashcards
+              Get Flashcards
             </Button>
           ) : null}
           <Button
