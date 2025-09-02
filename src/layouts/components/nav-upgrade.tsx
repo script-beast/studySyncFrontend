@@ -84,7 +84,7 @@ export function NavUpgrade({ sx, ...other }: BoxProps) {
             rel="noopener noreferrer"
             fullWidth
           >
-            Let's go again
+            Let&apos;s go again
           </Button>
         </Stack>
       </Box>
