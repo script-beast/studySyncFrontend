@@ -189,10 +189,10 @@
   resolved "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.4.0.tgz"
   integrity sha512-snKqtPW01tN0ui7yu9rGv69aJXr/a/Ywvl11sUjNtEcRc+ng/mQriFL0wLXMef74iHa/EkftbDzU9F8iFbH+zg==
 
-"@esbuild/win32-x64@0.25.4":
+"@esbuild/linux-x64@0.25.4":
   version "0.25.4"
-  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.4.tgz"
-  integrity sha512-nOT2vZNw6hJ+z43oP1SPea/G/6AbN6X+bGNhNuq8NtRHy4wsMhw765IKLNmnjek7GvjWBYQ8Q5VBoYTFg9y1UQ==
+  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.25.4.tgz"
+  integrity sha512-6e0cvXwzOnVWJHq+mskP8DNSrKBr1bULBvnFLpc1KY+d+irZSgZ02TGse5FsafKS5jg2e4pbvK6TPXaF/A6+CA==
 
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.7.0":
   version "4.7.0"
@@ -533,10 +533,15 @@
   resolved "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.9.tgz"
   integrity sha512-e9MeMtVWo186sgvFFJOPGy7/d2j2mZhLJIdVW0C/xDluuOvymEATqz6zKsP0ZmXGzQtqlyjz5sC1sYQUoJG98w==
 
-"@rollup/rollup-win32-x64-msvc@4.40.2":
+"@rollup/rollup-linux-x64-gnu@4.40.2":
   version "4.40.2"
-  resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.40.2.tgz"
-  integrity sha512-bwspbWB04XJpeElvsp+DCylKfF4trJDa2Y9Go8O6A7YLX2LIKGcNK/CYImJN6ZP4DcuOHB4Utl3iCbnR62DudA==
+  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.40.2.tgz"
+  integrity sha512-lG7Xa+BmBNwpjmVUbmyKxdQJ3Q6whHjMjzQplOs5Z+Gj7mxPtWakGHqzMqNER68G67kmCX9qX57aRsW5V0VOng==
+
+"@rollup/rollup-linux-x64-musl@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.40.2.tgz"
+  integrity sha512-tD46wKHd+KJvsmije4bUskNuvWKFcTOIM9tZ/RrmIvcXnbi0YK/cKS9FzFtAm7Oxi2EhV5N2OpfFB348vSQRXA==
 
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
@@ -575,10 +580,15 @@
   resolved "https://registry.npmjs.org/@svgdotjs/svg.select.js/-/svg.select.js-4.0.3.tgz"
   integrity sha512-qkMgso1sd2hXKd1FZ1weO7ANq12sNmQJeGDjs46QwDVsxSRcHmvWKL2NDF7Yimpwf3sl5esOLkPqtV2bQ3v/Jg==
 
-"@swc/core-win32-x64-msvc@1.11.24":
+"@swc/core-linux-x64-gnu@1.11.24":
   version "1.11.24"
-  resolved "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.11.24.tgz"
-  integrity sha512-sybnXtOsdB+XvzVFlBVGgRHLqp3yRpHK7CrmpuDKszhj/QhmsaZzY/GHSeALlMtLup13M0gqbcQvsTNlAHTg3w==
+  resolved "https://registry.npmjs.org/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.11.24.tgz"
+  integrity sha512-IM7d+STVZD48zxcgo69L0yYptfhaaE9cMZ+9OoMxirNafhKKXwoZuufol1+alEFKc+Wbwp+aUPe/DeWC/Lh3dg==
+
+"@swc/core-linux-x64-musl@1.11.24":
+  version "1.11.24"
+  resolved "https://registry.npmjs.org/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.11.24.tgz"
+  integrity sha512-DZByJaMVzSfjQKKQn3cqSeqwy6lpMaQDQQ4HPlch9FWtDx/dLcpdIhxssqZXcR2rhaQVIaRQsCqwV6orSDGAGw==
 
 "@swc/core@^1.11.22":
   version "1.11.24"
@@ -756,10 +766,15 @@
     "@typescript-eslint/types" "8.32.1"
     eslint-visitor-keys "^4.2.0"
 
-"@unrs/resolver-binding-win32-x64-msvc@1.7.2":
+"@unrs/resolver-binding-linux-x64-gnu@1.7.2":
   version "1.7.2"
-  resolved "https://registry.npmjs.org/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.7.2.tgz"
-  integrity sha512-friS8NEQfHaDbkThxopGk+LuE5v3iY0StruifjQEt7SLbA46OnfgMO15sOTkbpJkol6RB+1l1TYPXh0sCddpvA==
+  resolved "https://registry.npmjs.org/@unrs/resolver-binding-linux-x64-gnu/-/resolver-binding-linux-x64-gnu-1.7.2.tgz"
+  integrity sha512-dEidzJDubxxhUCBJ/SHSMJD/9q7JkyfBMT77Px1npl4xpg9t0POLvnWywSk66BgZS/b2Hy9Y1yFaoMTFJUe9yg==
+
+"@unrs/resolver-binding-linux-x64-musl@1.7.2":
+  version "1.7.2"
+  resolved "https://registry.npmjs.org/@unrs/resolver-binding-linux-x64-musl/-/resolver-binding-linux-x64-musl-1.7.2.tgz"
+  integrity sha512-RvP+Ux3wDjmnZDT4XWFfNBRVG0fMsc+yVzNFUqOflnDfZ9OYujv6nkh+GOr+watwrW4wdp6ASfG/e7bkDradsw==
 
 "@vitejs/plugin-react-swc@^3.10.0":
   version "3.10.0"
