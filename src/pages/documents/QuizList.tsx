@@ -26,7 +26,7 @@ const QuizList = () => {
   const [tableData, setTableData] = React.useState<Quiz[]>([]);
   const [total, setTotal] = React.useState(0);
 
-  const loadData = async () => {
+  const loadData = React.useCallback(async () => {
     try {
       const res = await quizzesAPI.getAll(table.page + 1, table.rowsPerPage);
       setTableData(res.data);
@@ -34,7 +34,7 @@ const QuizList = () => {
     } catch (error) {
       console.error(error);
     }
-  };
+  }, [table.page, table.rowsPerPage]);
 
   const TABLE_HEAD: TableHeadCellProps[] = [
     { id: 'fileName', label: 'File Name', sx: { minWidth: 200 } },
@@ -47,7 +47,7 @@ const QuizList = () => {
 
   React.useEffect(() => {
     loadData();
-  }, [table.page, table.rowsPerPage]);
+  }, [loadData]);
 
   return (
     <DashboardContent>

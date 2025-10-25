@@ -9,7 +9,6 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 
-import { usePathname } from 'src/routes/hooks';
 import { RouterLink } from 'src/routes/components';
 
 import { Label } from 'src/components/label';
@@ -32,8 +31,6 @@ export type AccountPopoverProps = IconButtonProps & {
 };
 
 export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps) {
-  const pathname = usePathname();
-
   const { open, anchorEl, onClose, onOpen } = usePopover();
 
   const { user } = useMockedUser();

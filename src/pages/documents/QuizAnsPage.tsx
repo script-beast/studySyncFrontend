@@ -3,7 +3,7 @@ import type { QuizResult, QuizAttempt } from 'src/types';
 import React from 'react';
 import { useParams, useNavigate } from 'react-router';
 
-import { Button, Chip, Stack, Typography } from '@mui/material';
+import { Chip, Stack, Button, Typography } from '@mui/material';
 
 import { fDate } from 'src/utils/format-time';
 
@@ -29,7 +29,7 @@ const QuizAnsPage = () => {
   const [loading, setLoading] = React.useState(false);
   const [selectedIndex, setSelectedIndex] = React.useState<number>(-1);
 
-  const loadData = async () => {
+  const loadData = React.useCallback(async () => {
     setLoading(true);
     try {
       if (!id) {
@@ -59,12 +59,12 @@ const QuizAnsPage = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [id, navigate]);
 
   React.useEffect(() => {
     if (!id) return;
     loadData();
-  }, [id]);
+  }, [id, loadData]);
 
   const handleChangeQuestion = (index: number) => setSelectedIndex(index);
 

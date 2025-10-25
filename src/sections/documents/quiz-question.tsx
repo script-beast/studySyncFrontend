@@ -1,6 +1,6 @@
 import type { QuizResult } from 'src/types';
 
-import { Box, Radio, Stack, TextField, Typography, FormControlLabel } from '@mui/material';
+import { Radio, Stack, TextField, Typography, FormControlLabel } from '@mui/material';
 
 import { Scrollbar } from 'src/components/scrollbar';
 
